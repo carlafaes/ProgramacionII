@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import services.*;
 
 public class App {
 
@@ -76,6 +75,7 @@ public class App {
 
     public static void novedades() {
         System.out.println("No hay novedades");
+        NovedadesMetodo();
     }
 
     public static void turnos() {
@@ -167,6 +167,34 @@ public class App {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+        }
+
+    }
+
+    public static void NovedadesMetodo() {
+
+        int opcion;
+        Scanner sn = new Scanner(System.in);
+        System.out.println("---------Novedades-------------");
+
+        System.out.println("Nacimientos-Decesos");
+        System.out.println("");
+        System.out.println("Seleccione su opcion: ");
+        System.out.println("1. Nacimientos");
+        System.out.println("2. Decesos");
+        System.out.println("3. Ver Inventario");
+        opcion = sn.nextInt();
+
+        if (opcion == 1) {
+            System.out.println("Nacimientos");
+                 }
+        if (opcion == 2) {
+            System.out.println("Decesos");
+         
+        }
+        if (opcion == 3) {
+            System.out.println("Inventario");
+         
         }
 
     }
